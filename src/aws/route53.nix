@@ -25,28 +25,12 @@ in {
     };
   };
 
-  mkRecordAliasCloudfront = { name, zone, type, value }: {
-    aws_route53_record."${tf.tfName name}" = {
-      allow_overwrite = true;
-      zone_id = lib.tfRef "aws_route53_zone.${tf.tfName zone}.zone_id";
-      inherit name type;
-
-      alias = {
-        name = lib.tfRef
-          "aws_cloudfront_distribution.${tf.tfName value}.domain_name";
-        zone_id = lib.tfRef
-          "aws_cloudfront_distribution.${tf.tfName zone}.hosted_zone_id";
-        evaluate_target_health = true;
-      };
-    };
-  };
-
   mkRecord = { name, zone, type, value }: {
     aws_route53_record."${tf.tfName name}" = {
       inherit name type;
       zone_id = lib.tfRef "aws_route53_zone.${tf.tfName zone}.zone_id";
       records = [ value ];
-      ttl = 100;
+      ttl = 300;
     };
   };
 }
