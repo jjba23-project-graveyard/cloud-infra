@@ -1,6 +1,31 @@
-* Cloud Infra - a reproducible cloud infrastructure for JJBA's projects
+#+title: Cloud Infra
 
-Welcome to my cloud infrastructure's source code. Here you can learn a lot about subjects like Nix, Flakes, Terraform (OpenTofu), Amazon AWS and more.
+/a reproducible cloud infrastructure for Joe's projects/
+
+Welcome to my cloud infrastructure's source code.
+
+This code powers part of:
+- jointhefreeworld.org  :: My personal website
+- jointhefreeworld.org/blog  :: My blog
+- wikimusic.jointhefreeworld.org :: My music knowledge management system
+- minecraft-server.jointhefreeworld.org :: ergo sum
+- carvoeirowaterfun.com :: ergo sum
+- casadelcata.es :: ergo sum    
+  
+Here you can learn a lot about subjects like Nix, Flakes, Terraform (OpenTofu), Amazon AWS and more.
+
+** Interesting files
+
+Note: I have moved some of my infra to a private VPS where I do more with GNU Guix instead of Terraform and Nix.
+If you want to see this code at it's largest peak, refer to the [[https://codeberg.org/jjba23/cloud-infra/src/branch/full-in-the-cloud][full-in-the-cloud]] branch.
+
+See [[file:configuration.nix][configuration.nix]] to get an idea of how I use my own built abstractions to declare my cloud infrastructure.
+
+Then explore the mystical contents of the [[file:src/][src/]] folder where all the logic for different providers resides.
+
+You can see some more information about Terranix and its usage in [[file:docs/][docs/]].
+
+[[file:resources/img/dall-e-4-thumb.png]]
 
 ** What is the motivation ?
 
@@ -9,14 +34,6 @@ This is an effort in using the great [[https://terranix.org/][Terranix project]]
 At the same time I profit from all the [[https://developer.hashicorp.com/terraform/language/providers][Terraform providers]] that exist.
 
 With the code you can find here, I create and maintain all my AWS infrastructure in a very pleasant way, and creating good abstractions to ease my journey in the cloud.
-
-** Interesting files
-
-See [[file:configuration.nix][configuration.nix]] to get an idea of how I use my own built abstractions to declare my cloud infrastructure.
-
-Then explore the mystical contents of the [[file:src/][src/]] folder where all the logic for different providers resides.
-
-You can see some more information about Terranix and its usage in [[file:docs/][docs/]].
 
 ** What is Terraform?
 
@@ -30,7 +47,7 @@ You also have complete reproducibility package and plugin wise thanks to the Ter
 
 Read more about the amazing advantages of Nix in this use case down below.
 
-** TODO What is terranix?
+** What is terranix?
 
 terranix is a tool that enables you to render the config.tf.json file. It uses the NixOS module system and gives you tools like terranix-doc-man and terranix-doc-json to generate documentation of terranix modules.
 
