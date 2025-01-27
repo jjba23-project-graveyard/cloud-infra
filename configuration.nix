@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-{ config, lib, ... }:
+{ lib, ... }:
 
 let
   s3 = import ./src/aws/s3.nix { inherit lib; };
@@ -102,12 +102,20 @@ let
     }
   ];
 
-  buckets = [{
-    bucket = "cloud-infra-state-jjba";
-    description = "Cloud Infrastructure State";
-    env = prod;
-    isVersionedBucket = true;
-  }];
+  buckets = [
+    {
+      bucket = "cloud-infra-state-jjba";
+      description = "Cloud Infrastructure State";
+      env = prod;
+      isVersionedBucket = true;
+    }
+    {
+      bucket = "wolk-jjba-backups";
+      description = "Wolk JJBA Backups";
+      env = prod;
+      isVersionedBucket = false;
+    }
+  ];
 
   zones = [
     {
@@ -124,23 +132,43 @@ let
     }
   ];
 
-  groups = [{
-    name = "mail-senders";
-    path = "/automation/";
-    policyName = "mail-senders";
-    policyStatements = [{
-      Effect = "Allow";
-      Action = [ "ses:*" ];
-      Resource = "*";
-    }];
-  }];
+  groups = [
+    {
+      name = "mail-senders";
+      path = "/automation/";
+      policyName = "mail-senders";
+      policyStatements = [{
+        Effect = "Allow";
+        Action = [ "ses:*" ];
+        Resource = "*";
+      }];
+    }
+    {
+      name = "backer-uppers";
+      path = "/automation/";
+      policyName = "backer-uppers";
+      policyStatements = [{
+        Effect = "Allow";
+        Action = [ "s3:*" ];
+        Resource = "*";
+      }];
+    }
+  ];
 
-  users = [{
-    name = "mail-sender";
-    path = "/automation/";
-    groups = [ "mail-senders" ];
-    tags = { };
-  }];
+  users = [
+    {
+      name = "mail-sender";
+      path = "/automation/";
+      groups = [ "mail-senders" ];
+      tags = { };
+    }
+    {
+      name = "backer-upper";
+      path = "/automation/";
+      groups = [ "backer-uppers" ];
+      tags = { };
+    }
+  ];
 
   resources = [
     (map s3.mkBucket buckets)
