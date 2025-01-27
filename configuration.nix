@@ -95,6 +95,12 @@ let
       type = "A";
     }
     {
+      name = "lucidplan.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
       name = "minecraft-server.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
