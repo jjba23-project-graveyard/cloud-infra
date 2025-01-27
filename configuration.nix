@@ -95,7 +95,19 @@ let
       type = "A";
     }
     {
+      name = "www.byggsteg.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
       name = "lucidplan.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
+      name = "www.lucidplan.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
       type = "A";
