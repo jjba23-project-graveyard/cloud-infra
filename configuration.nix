@@ -113,6 +113,18 @@ let
       type = "A";
     }
     {
+      name = "hygguile.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
+      name = "www.hygguile.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
       name = "minecraft-server.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
