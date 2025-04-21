@@ -59,7 +59,7 @@ let
       type = "A";
     }
     {
-      name = "api.wikimusic.jointhefreeworld.org";
+      name = "zabbix.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
       type = "A";
