@@ -59,7 +59,13 @@ let
       type = "A";
     }
     {
-      name = "zabbix.jointhefreeworld.org";
+      name = "oculuslambda.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
+      name = "www.oculuslambda.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
       type = "A";
