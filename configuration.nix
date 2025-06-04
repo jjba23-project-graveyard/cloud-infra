@@ -71,6 +71,12 @@ let
       type = "A";
     }
     {
+      name = "pingwing.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
       name = "casadelcata.es";
       zone = "casadelcata.es";
       value = contaboIp;
