@@ -143,6 +143,12 @@ let
       type = "A";
     }
     {
+      name = "www.rchuidkliniek.beta.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
       name = "minecraft-server.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
