@@ -149,6 +149,18 @@ let
       type = "A";
     }
     {
+      name = "wip-site.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
+      name = "www.wip-site.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
       name = "minecraft-server.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
