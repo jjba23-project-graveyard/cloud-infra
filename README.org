@@ -10,7 +10,6 @@ This code powers part of:
 - wikimusic.jointhefreeworld.org :: My music knowledge management system
 - minecraft-server.jointhefreeworld.org :: ergo sum
 - carvoeirowaterfun.com :: ergo sum
-- casadelcata.es :: ergo sum    
   
 Here you can learn a lot about subjects like Nix, Flakes, Terraform (OpenTofu), Amazon AWS and more.
 

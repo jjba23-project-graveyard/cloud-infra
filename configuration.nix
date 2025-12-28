@@ -77,18 +77,6 @@ let
       type = "A";
     }
     {
-      name = "casadelcata.es";
-      zone = "casadelcata.es";
-      value = contaboIp;
-      type = "A";
-    }
-    {
-      name = "www.casadelcata.es";
-      zone = "casadelcata.es";
-      value = contaboIp;
-      type = "A";
-    }
-    {
       name = "carvoeirowaterfun.com";
       zone = "carvoeirowaterfun.com";
       value = contaboIp;
@@ -137,18 +125,6 @@ let
       type = "A";
     }
     {
-      name = "rchuidkliniek.beta.jointhefreeworld.org";
-      zone = "jointhefreeworld.org";
-      value = contaboIp;
-      type = "A";
-    }
-    {
-      name = "www.rchuidkliniek.beta.jointhefreeworld.org";
-      zone = "jointhefreeworld.org";
-      value = contaboIp;
-      type = "A";
-    }
-    {
       name = "wip-site.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
@@ -186,10 +162,6 @@ let
   zones = [
     {
       zone = "jointhefreeworld.org";
-      env = prod;
-    }
-    {
-      zone = "casadelcata.es";
       env = prod;
     }
     {
