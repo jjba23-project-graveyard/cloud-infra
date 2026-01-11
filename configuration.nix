@@ -125,6 +125,18 @@ let
       type = "A";
     }
     {
+      name = "torikomi.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
+      name = "www.torikomi.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
       name = "wip-site.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
