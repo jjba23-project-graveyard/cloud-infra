@@ -125,6 +125,18 @@ let
       type = "A";
     }
     {
+      name = "visus-aeternus.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
+      name = "www.visus-aeternus.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }    
+    {
       name = "torikomi.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
