@@ -125,6 +125,30 @@ let
       type = "A";
     }
     {
+      name = "grafana.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
+      name = "www.grafana.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
+      name = "prometheus.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
+      name = "www.prometheus.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
       name = "visus-aeternus.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
@@ -135,7 +159,7 @@ let
       zone = "jointhefreeworld.org";
       value = contaboIp;
       type = "A";
-    }    
+    }
     {
       name = "torikomi.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
