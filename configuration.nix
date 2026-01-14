@@ -149,6 +149,18 @@ let
       type = "A";
     }
     {
+      name = "prometheus-exporter.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
+      name = "www.prometheus-exporter.jointhefreeworld.org";
+      zone = "jointhefreeworld.org";
+      value = contaboIp;
+      type = "A";
+    }
+    {
       name = "visus-aeternus.jointhefreeworld.org";
       zone = "jointhefreeworld.org";
       value = contaboIp;
